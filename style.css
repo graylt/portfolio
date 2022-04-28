@@ -3,10 +3,11 @@
 /* font-family: 'Libre Franklin', sans-serif;
 font-family: 'Source Serif Pro', serif; */
 
-* {
-    box-sizing: border-box;
+*, :after, :before {
+    box-sizing: inherit;
+    /* box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin: 0; */
 }
 
 .grid {
@@ -16,37 +17,88 @@ font-family: 'Source Serif Pro', serif; */
     "nav"
     "body body body body"
     "footer footer footer footer";
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto;
-    grid-gap: 24px;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: auto; */
+    /* grid-gap: 24px; */
     column-gap: 24px;
     margin: 32px;
     grid-auto-flow: dense;
-    object-fit: cover;
+    /* background-color: rgb(192, 120, 32); */
     
+}
+
+.grid-thumbnails {
+    display: flex;
+    /* grid-template-areas: 
+    "header"
+    "nav"
+    "body"
+    "footer footer"; */
+    grid-column: span 2;
+    width: 100%;
+    /* row-gap: 16px; */
+    /* grid-gap: 24px; */
+    column-gap: 24px;
+    /* margin-right: auto;
+    margin-left: auto; */
+    /* margin: 32px; */
+    grid-auto-flow: hidden;
+    /* background-color: blueviolet; */
+    justify-content: start;
+    /* align-items: baseline; */
+
+}
+
+.grid-info {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "body"
+    "footer footer";
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-rows: auto; */
+    grid-gap: 24px;
+    column-gap: 24px;
+    margin: 32px;
+    /* grid-auto-flow: hidden; */
+
 }
 
 body {
     font-family: 'Libre Franklin', sans-serif;
     box-sizing: border-box;
     padding: 0em;
-    width: 100%;
+    /* width: 100%; */
     color: 000;
 }
 
-.nav-container {
+#nav {
     display: grid;
-    grid-template-columns: 1;
-    width: 400px;
-    
-    
+    grid-column: 1fr;
+    height: 32px;
+    width: 100%;
+    /* margin-top: 32px; */
+    /* padding-top: 32px; */
+    position: sticky;
+
 }
+
+/* .nav-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    position: sticky; */
+    /* box-sizing: border-box;
+    margin: 0; */
+/* } */
+
 .nav-h1 {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 32px;
     font-weight: 400;
     color: rgb(0, 0, 0);
     padding-bottom: 48px;
+    
 }
 
 
@@ -56,12 +108,11 @@ h2 {
     font-size: 24px;
     font-weight: 400;
     color: #000;
-    line-height: 32px;
-    /* margin: 0 0 0 24px;
-    padding: 8px; */
-
-    
+    padding: 8px 0;
+    margin: 0;
+    /* line-height: 32px; */
 }
+
 
 ul {
     display: grid;
@@ -92,60 +143,151 @@ p {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
 }
-
-#index-container {
+#project-container {
     display: flex;
-    grid-template-columns: 2 / 3 / 4 / 2;
-    object-fit: cover;
+    grid-column: 1fr;
     position: sticky;
     gap: 24px;
     padding-top: 80px;
-    margin: 24px;
-    width: 100;
-    resize: both;
-  overflow: auto;
+    margin: 8px;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+
 }
+
+#container1 {
+    display: flex;
+    grid-column: 3;
+    position: sticky;
+    width: 800px;
+    height: 400px;
+    background-color: blue;
+    overflow: auto;
+}
+#container2 {
+    display: flex;
+    grid-column: 3;
+    position: sticky;
+    width: 800px;
+    height: 400px;
+    background-color: blue;
+    overflow: auto;
+}
+#container3 {
+    display: flex;
+    grid-column: 3;
+    position: sticky;
+    width: 800px;
+    height: 400px;
+    background-color: blue;
+    overflow: auto;
+}
+
+#para1 {
+    display: flex;
+    grid-column: 1;
+    position: sticky;
+    width: 600px;
+    height: 200px;
+    justify-content: end;
+    flex-wrap: wrap;
+}
+
+#index-container {
+    display: flex;
+    grid-column: 3;
+    position: sticky;
+    padding-top: 160px;
+    /* margin: 0; */
+    /* margin-left: auto; */
+    /* margin-right: 0; */
+    text-align: left;
+    min-height: 50vh;
+    width: 100%;
+    justify-content: start;
+    flex-wrap: wrap;
+    overflow: visible;
+    row-gap: 24px;
+    column-gap: 24px;
+    /* background-color: aquamarine; */
+    /* padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
+    padding-left: 3.5rem;
+    padding-right: 3.5rem;
+
+    /* position: relative;
+    z-index: 1; */
+}
+
 #p1-container {
     display: flex;
-    grid-column: 2;
-    position: sticky;
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
+    grid-column: 1;
+    width: 240px;
+    height: 160px;
     background-color: blue;
 }
 #p2-container {
     display: flex;
+    grid-template-columns: 1;
     grid-column: 3;
-    position: sticky;
-    width: 300px;
-    height: 200px;
+    width: 240px;
+    height: 160px;
     background-color: blue;
 }
 #p3-container {
     display: flex;
-    grid-column: 4;
-    position: sticky;
-    width: 300px;
-    height: 200px;
+    grid-column: 3;
+    width: 240px;
+    height: 160px;
     background-color: blue;
 }
 #p4-container {
     display: flex;
     grid-column: 2;
-    position: sticky;
-    width: 300px;
-    height: 200px;
+    width: 240px;
+    height: 160px;
     background-color: blue;
 }
 #p5-container {
     display: flex;
-    grid-column: 3;
-     position: sticky;
-    width: 300px;
-    height: 200px;
+    grid-column: 2;
+    width: 240px;
+    height: 160px;
     background-color: blue;
+    justify-content: left;
 }
+
+#about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: sticky;
+    /* gap: 24px; */
+    /* padding-top: 24px; */
+    margin: 8px;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+}
+
+/* .about {
+    display: flex;
+    grid-template-columns: 2 / 3 / 4;
+    position: sticky;
+    gap: 24px;
+    padding-top: 80px;
+    margin: 8px;
+    min-height: 100vh;
+    width: 100%;
+    justify-content: end;
+    overflow: hidden;
+
+} */
 
 .footer li {
     display: inline;
@@ -166,9 +308,7 @@ p {
     padding: 24px 32px;
     
 } 
-     /* position: fixed;
-    bottom: 0;
-    justify-content: end; */
+
 
 
 /* footer { 
