@@ -359,8 +359,24 @@ p {
     /* bottom: 0;  */
 } 
 
+.info-xl {
+    display: block;
+    margin-top: 0;
+    font-weight: 700;
+    line-height: 48px;
+}
 
+.p-info {
+    display: block;
+    width: 50%;
+    justify-content: end;
+}
 
+image {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+}
 
 /* img {
     display: block;
