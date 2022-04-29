@@ -19,7 +19,7 @@ font-family: 'Source Serif Pro', serif; */
     "nav"
     "body body body body"
     "footer footer footer footer";
-    grid-template-columns: .5fr 1fr .2fr;
+    grid-template-columns: .5fr 2fr .2fr;
     grid-template-rows: auto;
     /* grid-gap: 24px; */
     column-gap: 24px;
@@ -51,21 +51,14 @@ font-family: 'Source Serif Pro', serif; */
 
 }
 
-/* .grid-info {
+.grid-info {
     display: grid;
-    grid-template-areas: 
-    "header"
-    "nav"
-    "body"
-    "footer footer";
-    grid-template-columns: repeat(3, 1fr); */
-    /* grid-template-rows: auto; */
-    /* grid-gap: 24px;
+    grid-column: 2;
+    grid-gap: 24px;
     column-gap: 24px;
-    margin: 32px; */
-    /* grid-auto-flow: hidden; */
-
-/* } */
+    margin: 32px;
+    grid-auto-flow: hidden;
+ }
 
 body {
     font-family: 'Libre Franklin', sans-serif;
@@ -231,7 +224,7 @@ p {
 
 #index-container {
     display: flex;
-    grid-column: 3;
+    grid-column: 2;
     position: sticky;
     padding-top: 32px;
     padding-left: 16px;
@@ -244,7 +237,7 @@ p {
     justify-content: start;
     flex-wrap: wrap;
     overflow: visible;
-    row-gap: 24px;
+    row-gap: 48px;
     column-gap: 24px;
     /* background-color: aquamarine; */
     /* padding-top: 3.5rem;
@@ -258,76 +251,120 @@ p {
 
 .p1 {
     display: flex;
-    grid-column: 1;
-    width: 240px;
-    height: 160px;
+    /* grid-column: ; */
+    width: 285px;
+    height: 300px;
     /* background-color: blue; */
     position: relative;
 }
 
-#p2-container {
+.p2 {
     display: flex;
-    grid-column: 3;
-    width: 240px;
-    height: 160px;
-    background-color: blue;
+    /* grid-column: 3; */
+    width: 285px;
+    height: 300px;
+    /* background-color: blue; */
+    position: relative;
 }
-#p3-container {
+.p3 {
     display: flex;
-    grid-column: 3;
-    width: 240px;
-    height: 160px;
-    background-color: blue;
+    /* grid-column: 3; */
+    width: 285px;
+    height: 300px;
+    /* background-color: blue; */
+    position: relative;
 }
-#p4-container {
+.p4 {
     display: flex;
     grid-column: 1;
-    width: 240px;
-    height: 160px;
-    background-color: blue;
+    width: 285px;
+    height: 300px;
+    /* background-color: blue; */
+    position: relative;
 }
-#p5-container {
+.p5 {
     display: flex;
     grid-column: 2;
-    width: 240px;
-    height: 160px;
-    background-color: blue;
-    justify-content: left;
+    width: 285px;
+    height: 300px;
+    /* background-color: blue; */
+    position: relative;
 }
 
-#p6-container {
+/* #p6-container {
     display: flex;
     grid-column: 1;
     width: 240px;
     height: 160px;
     background-color: blue;
-}
+} */
 
-#p7-container {
+/* #p7-container {
     display: flex;
     grid-column: 1;
-    width: 768px;
+    width: 1000px;
     height: 400px;
     background-color: blue;
-}
+} */
 
-.tag {
-    position: absolute;
-    margin: 24px;
-    justify-content: left;
-    bottom: 0;
-}
 
 .caption {
     position: absolute;
     bottom: 0;
 }
 
-
-
-img {
-    display: block;
+.tags {
+    position: absolute;
+    justify-content: left;
+    /* bottom: 0; */
 }
+.caption2 {
+    position: absolute;
+    bottom: 0;
+}
+
+.tags2 {
+    position: absolute;
+    justify-content: left;
+    /* bottom: 0; */
+}
+.caption3 {
+    position: absolute;
+    bottom: 0;
+}
+
+.tags3 {
+    position: absolute;  
+    justify-content: left;
+    /* bottom: 0; */
+}
+.caption4 {
+    position: absolute;
+    bottom: 0;
+}
+
+.tags4 {
+    position: absolute;  
+    justify-content: left;
+    /* bottom: 0; */
+}
+.caption5 {
+    position: absolute;
+    bottom: 0;
+}
+
+.tags5 {
+    position: absolute;  
+    justify-content: left;
+    /* bottom: 0;  */
+} 
+
+
+
+
+/* img {
+    display: block;
+} */
 
 /* #about {
     display: grid;
