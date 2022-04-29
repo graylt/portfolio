@@ -1,6 +1,5 @@
 // -----Info: Resume----- myResume, myStuff
 
-// $('myResume').click('myStuff'); 
 
 function myResume() {
     let x =document.getElementById('myStuff');
@@ -10,5 +9,24 @@ function myResume() {
         x.style.display = 'none';
 }
 }
+
+    // $(document).ready(myResume()) {
+    //     $('#myResume').click(myResume()) {
+    //         $('myResume').hide();
+    //     });
+    //     $('#myResume').click(myResume()){
+    //         $('#myStuff').show();
+    //     });
+    
+// const btn = documentGetElementById('myResume');
+
+// btn.addEventListener('click', () => {
+//     btn.style.display='none';
+
+//     const ul = document.getElementById('myStuff');
+//     ul.style.display = 'block'
+// })
+
+
 
 

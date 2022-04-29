@@ -364,7 +364,10 @@ p {
 }
 
 #myStuff {
+    display: none;
     text-align: left;
+    line-height: 24px;
+    margin: 0;
 }
 
 .view-more {
@@ -377,6 +380,9 @@ p {
     
 }
 
+#short-list {
+    line-height: 24px;
+}
 
 .footer li {
     display: inline;
