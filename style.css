@@ -19,7 +19,7 @@ font-family: 'Source Serif Pro', serif; */
     "nav"
     "body body body body"
     "footer footer footer footer";
-    grid-template-columns: .5fr 2fr .2fr;
+    grid-template-columns: .5fr 2fr .1fr;
     grid-template-rows: auto;
     /* grid-gap: 24px; */
     column-gap: 24px;
@@ -158,29 +158,51 @@ p {
     display: flex;
     grid-column: 2 / 3;
     gap: 24px;
-    padding-top: 80px;
+    padding-top: 24px;
     margin: 8px;
     min-height: 100vh;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: left;
     flex-wrap: wrap;
     overflow: hidden;
-    position: relative;
+    /* position: relative; */
     overflow: hidden;
     /* z-index: 1; */
 
 }
+ 
+.p-1 {
+    /* display: grid; */
+    
+   justify-content: right;
+    position: absolute;
+    /* margin-right: 0;
+    padding-left: 80px; */
+}
 
-#container1 {
+.text-2 {
+    margin-right: 940px;
+    /* justify-content: left; */
+    
+}
+
+/* text { 
+    position: absolute; */
+    /* top: 80px;
+    left: 80px; */
+/* } */
+
+#project-1 {
     display: flex;
     grid-column: 3;
-    position: sticky;
-    width: 800px;
-    height: 400px;
-    background-color: blue;
-    overflow: auto;
+    /* position: absolute; */
+    width: 3000px;
+    height: 600px;
+    /* background-color: blue; */
+    /* overflow: auto; */
+    justify-content: flex-end;
 }
-#container2 {
+/* #container2 {
     display: flex;
     grid-column: 3;
     position: sticky;
@@ -197,7 +219,7 @@ p {
     height: 400px;
     background-color: blue;
     overflow: auto;
-}
+} */
 
 #para1 {
     display: flex;
