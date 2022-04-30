@@ -19,7 +19,7 @@ font-family: 'Source Serif Pro', serif; */
     "nav"
     "body body body body"
     "footer footer footer footer";
-    grid-template-columns: .2fr .2fr 2fr .1fr;
+    grid-template-columns: .1fr .1fr 2fr .05fr;
     grid-template-rows: auto;
     /* grid-gap: 24px; */
     column-gap: 24px;
@@ -128,6 +128,11 @@ a:hover{
     color:000;
 }
 
+a.name:hover {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 200;
+}
+
 a.nav:hover {
     color: #000;
 }
@@ -140,7 +145,6 @@ p {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
 }
-
 
 #project-container {
     display: flex;
@@ -225,11 +229,11 @@ p {
 
 #index-container {
     display: flex;
-    grid-column: 3;
-    position: sticky;
+    grid-column:  3 / 4;
+    /* position: sticky; */
     padding-top: 32px;
     padding-left: 16px;
-    margin-top: 80px;
+    margin-top: 8px;
     text-align: left;
     min-height: 50vh;
     width: 100%;
