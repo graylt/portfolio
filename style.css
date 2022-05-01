@@ -221,6 +221,11 @@ p {
     width: 100vh
     
 } 
+
+section {
+    padding-right: 48px;
+    width: 400px;
+}
 /* .p-2 {
     display: flex;
     padding-left: 24px;
@@ -494,7 +499,7 @@ p {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
     font-weight: 100;
-    padding: 48px;
+    /* padding: 56px; */
 }
 
 .footer li {
