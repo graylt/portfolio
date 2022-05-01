@@ -1,5 +1,4 @@
-// -----Info: Resume----- myResume, myStuff
-
+// -----Info: Resume-----
 
 function myResume() {
     let x =document.getElementById('myStuff');
@@ -10,7 +9,7 @@ function myResume() {
 }
 }
 
-// fixed header
+// Fixed main navigation
 const body = document.body;
 const header = document.querySelector('header');
 const scrollUp = 'scroll-up';
@@ -39,6 +38,32 @@ window.addEventListener('scroll', () => {
     }
     lastScroll = currentScroll
 });
+
+// -----view more-----
+
+// $('.p1').on('mouseOver');
+
+$(document).ready(function(){
+    $('.p1').hover(function(){
+        $(this).css('opacity', '.5').text('- view more -');
+    },
+        function() {
+        $(this).prev('.p1')
+        }
+ )
+});
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
