@@ -10,34 +10,34 @@ function myResume() {
 }
 
 // Fixed main navigation
-const body = document.body;
-const header = document.querySelector('header');
-const scrollUp = 'scroll-up';
-const scrollDown = 'scroll-down';
+// const body = document.body;
+// const header = document.querySelector('header');
+// const scrollUp = 'scroll-up';
+// const scrollDown = 'scroll-down';
 
-let lastScroll = 0;
+// let lastScroll = 0;
 
-window.addEventListener('scroll', () => {
-    const currentScroll = window.pageYOffset;
-    if (currentScroll === 0) {
-        header.classList.remove(scroll.Up);
-        return;
-    }
+// window.addEventListener('scroll', () => {
+//     const currentScroll = window.pageYOffset;
+//     if (currentScroll === 0) {
+//         header.classList.remove(scroll.Up);
+//         return;
+//     }
 
-    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+//     if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
        // down
-        header.classList.remove(scrollUp);
-        header.classList.add(scrollDown);
-    } else if (
-        currentScroll < lastScroll && 
-        header.classList.contains(scrollDown)
-    ) {
+    //     header.classList.remove(scrollUp);
+    //     header.classList.add(scrollDown);
+    // } else if (
+    //     currentScroll < lastScroll && 
+    //     header.classList.contains(scrollDown)
+    // ) {
        // up 
-        header.classList.remove(scrollDown);
-        header.classList.add(scrollUp);
-    }
-    lastScroll = currentScroll
-});
+//         header.classList.remove(scrollDown);
+//         header.classList.add(scrollUp);
+//     }
+//     lastScroll = currentScroll
+// });
 
 // -----view more-----
 
@@ -45,10 +45,10 @@ window.addEventListener('scroll', () => {
 
 $(document).ready(function(){
     $('.p1').hover(function(){
-        $(this).css('opacity', '.5').text('- view more -');
+        $(this).text('- view more -');
     },
         function() {
-        $(this).prev('.p1')
+        $(this).replace('.p1')
         }
  )
 });
