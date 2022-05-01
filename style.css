@@ -111,6 +111,13 @@ h2 {
     /* line-height: 32px; */
 }
 
+h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+    font-weight: 400;
+
+}
+
 ul {
     display: grid;
     list-style-type: none;
@@ -152,87 +159,51 @@ p {
     gap: 0px;
     padding-top: 0;
     margin: 32px;
-    /* min-height: 100vh; */
     width: 100vh;
-    justify-content: left;
-    flex-wrap: wrap;
-    overflow: hidden;
+    /* min-height: 100vh; */
+    /* min-height: 50vh; */
+    width: 100%;
+    /* justify-content: left; */
+    /* flex-wrap: wrap; */
+    overflow: visible;
+    /* justify-content: flex-start; */
     /* position: relative; */
-    overflow: hidden;
     /* z-index: 1; */
     background-color: cornflowerblue;
-    position: relative;
+    /* position: relative; */
 
 }
 
- /* section {
-     display: grid;
-     grid-column: 3; */
-     /* position: relative; */
-     /* justify-content: r; */
-     /* position: absolute; */
-     /* bottom: 0;
-     margin-top: 200px; */
+/* section {
+    justify-content: left;
+    grid-column: auto;
+    
+} */
+
  
 .p-1 {
     display: flex;
-    justify-content: flex-end;
-    /* justify-content: right;
-    gap: 24px;
-    margin-top: 48px; */
-    /* float: left; */
-    /* float: left; */
-    /* justify-content: right; */
-    /* position: absolute; */
-}
-
-/* .text-2 {
-    display: grid;
-    padding: 32px;
-    margin-right: 600px;
-    background-color: beige;
-} */
-
+    padding-left: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* width: 100%; */
+    object-fit: contain;
+    height: 50vh;
+    width: 100vh
+    
+} 
 
 #project-1 {
     display: flex;
-    justify-content: left;
+    grid-column: 3 / 4;
+    justify-content: end;
+    object-fit: cover;
+    /* justify-content: left; */
     gap: 24px;
-    margin-top: 48px;
-    /* grid-column: 2 / 3; */
-    /* position: absolute; */
-    width: 2000px;
-    height: 600px;
-    /* overflow: auto; */
-    /* justify-content: flex-end; */
-}
-/* #container2 {
-    display: flex;
-    grid-column: 3;
-    position: sticky;
-    width: 800px;
-    height: 400px;
-    background-color: blue;
-    overflow: auto;
-}
-#container3 {
-    display: flex;
-    grid-column: 3;
-    position: sticky;
-    width: 800px;
-    height: 400px;
-    background-color: blue;
-    overflow: auto;
-} */
-
-#para1 {
-    display: flex;
-    grid-column: span 2;
-    position: sticky;
-    width: 600px;
-    height: 200px;
-    /* justify-content: end;
-    flex-wrap: wrap; */
+    margin-top: 0;
+    width: 100%;
+    /* height: 50vh; */
 }
 
 /* thumbnails */
@@ -389,6 +360,12 @@ p {
     text-align: left;
     line-height: 24px;
     margin: 0;
+}
+
+.fa-plus {
+    padding: 8px;
+    font-weight: 100;
+    justify-content: center;
 }
 
 .view-more {
