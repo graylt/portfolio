@@ -290,62 +290,87 @@ section {
 
 #index-container {
     display: flex;
-    grid-column:  3 / 4;
+    grid-column:  2 / 3;
     position: sticky;
+    column-gap: 24px;
     padding-top: 32px;
+    row-gap: 48px;
     padding-left: 16px;
     margin-top: 8px;
     text-align: left;
     min-height: 50vh;
     width: 100%;
-    justify-content: start;
+    justify-content: start; 
     flex-wrap: wrap;
     overflow: hidden;
-    row-gap: 48px;
-    column-gap: 24px;
+    
+
     /* overflow-y: hidden; */
     /* background-color: aquamarine; */
 }
 
 .p1:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.p2:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.p3:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.p4:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.p5:hover {
+    cursor: pointer;
+    opacity: 0.5;
+}
+.p6:hover {
+    cursor: pointer;
     opacity: 0.5;
 }
 
 .p1 {
     display: flex;
-    /* grid-column: ; */
+    /* display: flex; */
+    /* grid-column: 2; */
     width: 285px;
     height: 300px;
     /* background-color: blue; */
-    position: relative;
+    /* position: relative; */
     position: sticky;
+    
 }
 
 .p2 {
     display: flex;
-    /* grid-column: 3; */
+    /* grid-column: 2; */
     width: 285px;
     height: 300px;
     /* background-color: blue; */
-    position: relative;
+    /* position: relative; */
     position: sticky;
 }
 .p3 {
     display: flex;
-    /* grid-column: 3; */
+    /* grid-column: 2; */
     width: 285px;
     height: 300px;
     /* background-color: blue; */
-    position: relative;
+    /* position: relative; */
     position: sticky;
 }
 .p4 {
     display: flex;
-    /* grid-column: 1; */
+    /* grid-column: 2; */
     width: 285px;
     height: 300px;
     /* background-color: blue; */
-    position: relative;
+    /* position: relative; */
     position: sticky;
 }
 .p5 {
@@ -356,28 +381,54 @@ section {
     /* background-color: blue; */
     position: relative;
     position: sticky;
+
+}
+.p6 {
+    display: flex;
+    /* grid-column: 2; */
+    width: 285px;
+    height: 300px;
+    /* background-color: blue; */
+    position: relative;
+    position: sticky;
+
 }
 
-.caption {
+/* .caption {
     position: absolute;
     bottom: 0;
-}
+} */
 
-.tags {
+/* .tags {
     position: absolute;
     justify-content: left;
+    font-size: 14px; */
     /* bottom: 0; */
+/* } */
+.content-index {
+    position: absolute;
+    display: block;
+    bottom: 0;
+    
 }
-.caption2 {
+.index-tag li {
+    display: inline;
+    justify-content: left;
+    font-size: 14px;
+    color: gray;
+}
+
+
+/* .caption2 {
     position: absolute;
     bottom: 0;
 }
 
 .tags2 {
     position: absolute;
-    justify-content: left;
+    justify-content: left; */
     /* bottom: 0; */
-}
+/* }
 .caption3 {
     position: absolute;
     bottom: 0;
@@ -385,9 +436,9 @@ section {
 
 .tags3 {
     position: absolute;  
-    justify-content: left;
+    justify-content: left; */
     /* bottom: 0; */
-}
+/* }
 .caption4 {
     position: absolute;
     bottom: 0;
@@ -395,19 +446,19 @@ section {
 
 .tags4 {
     position: absolute;  
-    justify-content: left;
+    justify-content: left; */
     /* bottom: 0; */
-}
+/* }
 .caption5 {
     position: absolute;
     bottom: 0;
-}
+} */
 
-.tags5 {
+/* .tags5 {
     position: absolute;  
-    justify-content: left;
+    justify-content: left; */
     /* bottom: 0;  */
-} 
+/* }  */
 
 .info-xl {
     display: block;
@@ -424,12 +475,6 @@ section {
     justify-content: end;
     margin-top: 0;
 }
-
-/* #pdf {
-    text-decoration: underline; */
-    /* text-decoration-thickness: 2px; */
-
-/* } */
 
 .image {
    display: flex;
@@ -451,7 +496,7 @@ section {
 
 .fa-plus {
     padding: 8px;
-    font-weight: 100;
+    font-weight: 300;
     justify-content: center;
 }
 
@@ -463,22 +508,18 @@ section {
     text-align: left;
     padding: 0;
     cursor: pointer;
-    
 }
 
 #short-list {
     line-height: 24px;
 }
 
-
 .p-1 {
     display:none;
 }
 
 .prev .next {
-    /* cursor: pointer; */
     align-self: center;
-    /* text-align: left; */
     padding: 0;
 }
 .next {
@@ -499,7 +540,6 @@ section {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
     font-weight: 100;
-    /* padding: 56px; */
 }
 
 .footer li {
@@ -531,18 +571,11 @@ section {
 } */
 
 
-
-
-
 @media (min-width: 992px) {
     .hide{
         top: -50px;
     }
 }
-
-
-
-
 
 
 @media only screen and (max-width: 600px) {
