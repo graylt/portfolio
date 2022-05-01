@@ -12,12 +12,42 @@
           $("#nav").load("nav.html");
         });
       </script>
+      <script>
+        //   On scroll
+        $(window).scroll(function() {
+            //if we have more than 200px
+            if ($(document).scrollTop() > 0) {
+                //class 'fixed' to header element
+                $('header').addClass('fixed');
+                //otherwise
+            } else {
+                //if header already has 'fixed' class
+                if ($('header').hasClass('fixed')) {
+                    //remove said class
+                    $('header').removeClass('fixed');
+                }
+            }
+        });
+      </script>
     <title>Tricia Gray</title>
-    <div class="grid">
 </head>
+<!-- <header>
+    <div id="nav"></div> -->
+    <!-- <div class="mini-menu" class="mini-menu-hidden">
+        <section>
+        <ul>
+            <li>Index</li>
+            <li>Info</li>
+            <li>Contact</li>
+        </ul>
+        </section>
+    </div> -->
+<!-- </header> -->
+    <div class="grid">
 <body>
-    <!-- <div class="grid"> -->
+        <header>
     <div id="nav"></div>
+</header>
         <div id="project-container">
         <!-- <div id="project-1"> -->
             <section>
@@ -30,6 +60,32 @@
         </section>
             <img class="p-1" src="https://images.unsplash.com/photo-1604079761721-3e65a793d95e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" height="500px">
         </div>
+
+        <!-- <div id="project-container">
+            <div id="project-1"> -->
+                <!-- <section>
+                    <ul>
+                    <li><h2>Title title title title</h2></li>
+                    <li><p>description</p></li>
+                    <li><h3>tags tags tags </h3></li>
+                    <li><p>more link</p></li>
+                </ul>
+            </section>
+                <img class="p-2" src="https://images.unsplash.com/photo-1604079761721-3e65a793d95e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" height="500px">
+            </div> -->
+
+            <!-- <div id="project-container"> -->
+                <!-- <div id="project-1"> -->
+                    <!-- <section>
+                        <ul>
+                        <li><h2>Title title title title</h2></li>
+                        <li><p>description</p></li>
+                        <li><h3>tags tags tags </h3></li>
+                        <li><p>more link</p></li>
+                    </ul>
+                </section>
+                    <img class="p-3" src="https://images.unsplash.com/photo-1604079761721-3e65a793d95e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" height="500px">
+                </div> -->
     <footer id="footer">
 <div class="footer"
     <ul>
@@ -41,7 +97,6 @@
 </div>
 </div>
 </footer>
-<!-- </div> -->
 </body>
 </div>
 </html>

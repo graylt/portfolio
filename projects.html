@@ -12,11 +12,30 @@
           $("#nav").load("nav.html");
         });
       </script>
+          <script>
+            //   On scroll
+            $(window).scroll(function() {
+                //if we have more than 200px
+                if ($(document).scrollTop() > 0) {
+                    //class 'fixed' to header element
+                    $('header').addClass('fixed');
+                    //otherwise
+                } else {
+                    //if header already has 'fixed' class
+                    if ($('header').hasClass('fixed')) {
+                        //remove said class
+                        $('header').removeClass('fixed');
+                    }
+                }
+            });
+          </script>
     <title>Index</title>
 </head>
 <body>
     <div class="grid">
+        <header>
         <div id="nav"></div>
+    </header>
         <!-- <div id="filter">
             <ul>
                 <li>All</li>

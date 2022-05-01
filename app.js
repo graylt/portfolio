@@ -10,23 +10,35 @@ function myResume() {
 }
 }
 
-    // $(document).ready(myResume()) {
-    //     $('#myResume').click(myResume()) {
-    //         $('myResume').hide();
-    //     });
-    //     $('#myResume').click(myResume()){
-    //         $('#myStuff').show();
-    //     });
-    
-// const btn = documentGetElementById('myResume');
+// fixed header
+const body = document.body;
+const header = document.querySelector('header');
+const scrollUp = 'scroll-up';
+const scrollDown = 'scroll-down';
 
-// btn.addEventListener('click', () => {
-//     btn.style.display='none';
+let lastScroll = 0;
 
-//     const ul = document.getElementById('myStuff');
-//     ul.style.display = 'block'
-// })
+window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    if (currentScroll === 0) {
+        header.classList.remove(scroll.Up);
+        return;
+    }
 
+    if (currentScroll > lastScroll && !body.classList.contains(scrollDown)) {
+       // down
+        header.classList.remove(scrollUp);
+        header.classList.add(scrollDown);
+    } else if (
+        currentScroll < lastScroll && 
+        header.classList.contains(scrollDown)
+    ) {
+       // up 
+        header.classList.remove(scrollDown);
+        header.classList.add(scrollUp);
+    }
+    lastScroll = currentScroll
+});
 
 
 
