@@ -577,6 +577,17 @@ section .project-2 {
     }
 }
 
+/* needs to be adjusted */
+/* img {
+    width: 100%; */
+    /* height: auto; */
+  /* } */
+
+  .fullwidth {
+    width: 100%;
+    float: left;
+  }
+
 /* -----------------GRAVEYARD------------------- */
 
 /* .caption2 {
