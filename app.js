@@ -61,6 +61,21 @@ function carousel() {
   x[myIndex-1].style.display = 'block';  
   setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+
+let mySecondIndex = 0;
+carousel2();
+
+function carousel2() {
+    let j;
+    let y = document.getElementsByClassName('p-2');
+    for (j = 0; j < y.length; j++) {
+        y[j].style.display = 'none';
+    }
+    mySecondIndex++;
+    if (mySecondIndex > y.length) {mySecondIndex = 1}
+    y[mySecondIndex-1].style.display = 'block';
+    setTimeout(carousel2, 2000);
+    }
 });
 
 // manual select
@@ -81,7 +96,29 @@ function showDivs(n) {
     x[i].style.display = 'none';
   }
   x[slideIndex-1].style.display = 'block';
+
 }
+
+// multiple slideshows
+// let slideIndx = [1,1];
+// const slideId = ['p-1', 'p-2']
+// showDivs(1, 0);
+// showDivs(1, 1);
+
+// function plusDivs(n, no) {
+//   showDivs(slideIndx[no] += n, no);
+// }
+
+// function showDivs(n, no) {
+//   let i;
+//   const x = document.getElementsByClassName(slideId[no]);
+//   if (n > x.length) {slideIndx[no] = 1}
+//   if (n < 1) {slideIndx[no] = x.length}
+//   for (i = 0; i < x.length; i++) {
+//     x[i].style.display = "none";  
+//   }
+//   x[slideIndx[no]-1].style.display = "block";  
+// }
 
 
 

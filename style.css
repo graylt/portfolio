@@ -156,8 +156,30 @@ p {
     /* background-color: cornflowerblue; */
     position: sticky;
 }
+#project-container-2 {
+    display: flex;
+    grid-column: 3;
+    gap: 0px;
+    padding-top: 0;
+    margin: 32px;
+    width: 100vh;
+    overflow: visible;
+    /* background-color: cornflowerblue; */
+    position: sticky;
+}
 
 .p-1 {
+    display: flex;
+    padding-left: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    /* width: 100%; */
+    object-fit: contain;
+    height: 50vh;
+    width: 100vh
+} 
+.p-2 {
     display: flex;
     padding-left: 24px;
     top: 0;
@@ -173,19 +195,23 @@ section {
     padding-right: 48px;
     width: 400px;
 }
+section .project-2 {
+    padding-right: 48px;
+    width: 400px;
+}
 
-#project-1 {
+/* #project-1 {
     display: flex;
     grid-column: 3;
     justify-content: end;
-    object-fit: cover;
+    object-fit: cover; */
     /* justify-content: left; */
-    gap: 24px;
+    /* gap: 24px;
     margin-top: 0;
     width: 100%;
-    position: sticky;
+    position: sticky; */
     /* height: 50vh; */
-}
+/* } */
 
 .home-project {
     font-family:'Source Serif Pro', serif;
@@ -197,7 +223,7 @@ section {
     color: rgb(67, 67, 67);
 }
 .home-tag {
-    font-size: 12px;
+    font-size: 14px;
     color: 000;
 }
 
@@ -206,6 +232,9 @@ section {
 }
 
 .p-1 {
+    display:none;
+}
+.p-2 {
     display:none;
 }
 
@@ -359,7 +388,7 @@ section {
 .index-tag li {
     display: inline;
     justify-content: left;
-    font-size: 12px;
+    font-size: 14px;
     color: rgb(67, 67, 67);
 }
 
@@ -422,6 +451,13 @@ section {
 
 #short-list {
     line-height: 24px;
+}
+
+/* -----Project pages----- */
+
+.project-nav {
+    padding-top: 32px;
+    margin-left: 16px;
 }
 
 /* -----footer----- */

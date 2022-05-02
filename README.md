@@ -22,14 +22,18 @@ n/a
 
 // unsolved problems:
 
-would like to include a filter nav for the index page
-glitchy main navigation scroll
+-a filter navigation for the index page
+-glitchy main navigation scroll
+-css styling
+-project pages need projects
 
 // resources:
 w3schools
 css.tricks
 jquery doc
-fontawesome
 mdn
+stack overflow
+fontawesome
 google fonts
+
 
