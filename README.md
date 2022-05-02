@@ -41,5 +41,6 @@ mdn
 stack overflow
 fontawesome
 google fonts
+unsplash photos (placeholders)
 
 
