@@ -471,6 +471,10 @@ section .project-2 {
     justify-content: center;
 }
 
+#resume-container {
+    line-height: 16px;
+}
+
 .view-more {
     border: none;
     background: none;
@@ -491,6 +495,10 @@ section .project-2 {
 .resume-content {
     color: rgb(67, 67, 67);
     font-weight: 200;
+}
+
+.experience-container {
+    line-height: 24px;
 }
 
 /* -----Project pages----- */
