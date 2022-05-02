@@ -139,7 +139,7 @@ a:hover{
     color:000;
 }
 
-a.name:hover {
+a.main-nav:hover {
     font-family: 'Source Serif Pro', serif;
     font-weight: 200;
 }
@@ -148,8 +148,8 @@ a.nav:hover {
     color: #000;
 }
 
-.smart {
-    color: blue;
+.smart-link {
+    color: rgb(51, 51, 240);
 }
 
 p {
