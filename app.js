@@ -16,8 +16,10 @@ function myResume() {
 //original idea was to get text 'view more' when hovering over a project but had trouble configuring mouseout
 //I ended up using the function below
 
+// option a
 // $('.p1').on('mouseOver');
 
+//option b
 // $(document).ready(function(){
 //     $('.p1').hover(function(){
 //         $(this).text('- view more -');
