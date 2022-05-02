@@ -45,7 +45,7 @@ $(function() {
 
 // ------slideshow-----
 
-// auto-play
+// auto-play and multiple slideshow
 $(() => {
 let myIndex = 0;
 carousel();

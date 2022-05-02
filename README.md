@@ -4,9 +4,10 @@ css grid for layout
 css flexbox for details/containers
 
 javascript & and jquery were used for more detailed functionality/actions:
--image carousel/slideshow
+-image carousel/manual and auto slideshow/multiple slideshows
 -resume
 -main navigation and scroll
+-hover interaction
 
 // approach: 
 
@@ -20,12 +21,16 @@ site link: https://triciagray.netlify.app/index.html
 
 n/a
 
-// unsolved problems:
+// unsolved problems and incompletes:
 
--a filter navigation for the index page
+problem:
 -glitchy main navigation scroll
+
+incomplete:
+-a filter navigation for the index page
 -css styling
 -project pages need projects
+-link resume.pdf
 
 // resources:
 w3schools
