@@ -32,9 +32,11 @@ body > footer {
     grid-column: 6;
     grid-row: 1;
     margin-top: 24px;
-    background-color: blue;
-    margin-top: 2em;
-    justify-content: right;
+    /* background-color: blue; */
+    margin-top: 1em;
+    justify-items: end;
+    justify-self: right;
+    position: sticky;
 }
 
 .content {
@@ -44,9 +46,10 @@ body > footer {
     grid-row: 1;
     grid-gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
-    /* background-color: blueviolet; */
+    background-color: blueviolet;
     margin-top: 1em;
     justify-items: end;
+    margin-bottom: 2em;
 }
 
 .container-content-1 {
@@ -90,6 +93,7 @@ body > footer {
     flex: 100%;
     position: fixed;
     margin-right: 16px;
+    margin-bottom: 24px;
 }
 
 .wrapper {
@@ -144,6 +148,13 @@ h2 {
     /* position: sticky; */
     /* font-size: calc(.5em + 1vw); */
     /* line-height: calc(1em = 1vw); */
+}
+
+h3 {
+    font-family: 'Source Serif Pro', serif;
+    font-size: 24px;
+    font-weight: 400;
+   
 }
 
 /* nav {
@@ -230,11 +241,11 @@ figcaption {
 
 /* slideshow buttons */
 
-/* .prev .next {
+.prev .next {
     align-self: center;
     padding: 0;
-} */
-/* .next {
+}
+.next {
     cursor: pointer;
     right: 0;
     border: none;
@@ -242,12 +253,12 @@ figcaption {
     font-family: 'Libre Franklin', sans-serif;
     font-size: 16px;
     font-weight: 100;
-    font-size: calc(.5em + .5vw);  */
-    /* line-height: calc(1em = 1vw); */
+    font-size: calc(.5em + .5vw); 
+    line-height: calc(1em = 1vw);
 
-/* } */
+}
 
-/* .prev {
+.prev {
     cursor: pointer;
     left: 0;
     border: none;
@@ -256,7 +267,7 @@ figcaption {
     font-size: 16px;
     font-weight: 100;
     font-size: calc(.5em + .5vw);
-} */
+}
 
 /* --------------About page----------------- */
 
@@ -297,6 +308,7 @@ figcaption {
 .content-section-resume {
     grid-column: 1;
     grid-row: 3;
+    justify-self: left;
 }
 
 
@@ -364,24 +376,52 @@ figcaption {
     line-height: calc(.5em = .5vw);
 }
 
+.view-less {
+    font-family: 'Libre Franklin', sans-serif;
+}
+
 #short-list {
+    font-family: 'Libre Franklin', sans-serif;
     line-height: 24px;
     line-height: calc(.5em = .5vw);
 }
 
 .resume-content {
-    color: rgb(67, 67, 67);
+    color: rgb(111, 111, 111);
     font-weight: 200;
 }
 
 .experience-container {
-    line-height: 24px; */
+    font-family: 'Libre Franklin', sans-serif;
+    line-height: 24px; 
+}
+
+ul {
+    /* display: grid; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* .section-line {
+    grid-column: span 1;
+    grid-row: 3;
+    border: .5px solid;
+    color: rgb(111, 111, 111);
+    justify-self: left;
+} */
+
+/* -----Project pages----- */
+
+.project-nav {
+    padding-top: 32px;
+    margin-left: 16px;
+}
 
 .footer-content ul li {
     display: inline;
     list-style: none;
     padding: 8px;
-
 }
 
 a, .footer-content {
