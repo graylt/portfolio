@@ -25,7 +25,7 @@ n/a
 
 problem:
 -glitchy main navigation scroll
--responsive grid on index page
+-responsive grid
 
 incomplete:
 -a filter navigation for the index page
