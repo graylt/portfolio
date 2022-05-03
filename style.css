@@ -293,7 +293,8 @@ figcaption {
 
 .content-section-xl {
     display: grid;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 2;
+    grid-row: 1 / 2;
 
 }
 
@@ -306,8 +307,10 @@ figcaption {
 }
 
 .xl-header {
+    font-size: 48px;
     font-family: 'Source Serif Pro', serif;
     font-weight: 300;
+    line-height: 56px;
 }
 
 .sm-header {
