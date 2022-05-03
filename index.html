@@ -17,21 +17,203 @@
         //   On scroll
         $(window).scroll(function() {
             //if we have more than 200px - reduced to 0, needs adjusting to properly work
-            if ($(document).scrollTop() > 0) {
+            if ($(document).scrollTop() > 20) {
                 //class 'fixed' to header element
-                $('header').addClass('fixed');
+                $('nav').addClass('fixed');
                 //otherwise
             } else {
                 //if header already has 'fixed' class
-                if ($('header').hasClass('fixed')) {
+                if ($('nav').hasClass('fixed')) {
                     //remove said class
-                    $('header').removeClass('fixed');
+                    $('nav').removeClass('fixed');
                 }
             }
         });
       </script>
     <title>Tricia Gray</title>
 </head>
+    <!-- <div class="grid"> -->
+<body>
+<div class="wrapper">
+    <!-- <div class=" box nav"> -->
+        <!-- <nav>  -->
+            <div class=" box header">
+            <header>
+            <div id="nav"></div>
+        </header>
+    </div>
+    <!-- <div class="box nav2">Nav 2</div> -->
+
+    <div class="box content">
+
+        <div class="box container-content-1">
+            <figure>
+                <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button> -->
+            <img class="p-1" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="800" height="500px">
+
+            <img class="p-1" src="https://images.unsplash.com/photo-1604076947037-d909e2f10fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="800" height="500">
+
+            <img class="p-1" src="https://images.unsplash.com/photo-1604076984203-587c92ab2e58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60 "width="800" height="500">
+            <!-- <button class="next" onclick="plusDivs(1, 0)">&#8594;</button> -->
+                <figcaption>Creativity</figcaption>
+                <figcaption class="content-tags">2022 #Team, #Product design</figcaption>
+                <figcaption class="content-more">view more</figcaption>
+            </figure>
+        <!-- </div> -->
+
+        <div class="box container-content-2">
+            <figure>
+                <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button> -->
+            <img class="p-2" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="800" height="500px">
+
+            <img class="p-2" src="https://images.unsplash.com/photo-1604076947037-d909e2f10fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="800" height="500">
+
+            <img class="p-2" src="https://images.unsplash.com/photo-1604076984203-587c92ab2e58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60 "width="800" height="500">
+            <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button>
+            <button class="next" onclick="plusDivs(1, 0)">&#8594;</button> -->
+                <figcaption>Creativity</figcaption>
+                <figcaption class="content-tags">2022 #Team, #Product design</figcaption>
+                <figcaption class="content-more">view more</figcaption>
+            </figure>
+        <!-- </div> -->
+
+        <div class="box container-content-3">
+            <figure>
+                <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button> -->
+            <img class="p-3" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="800" height="500px">
+                <figcaption>Creativity</figcaption>
+                <figcaption class="content-tags">2022 #Team, #Product design</figcaption>
+                <figcaption class="content-more">view more</figcaption>
+            </figure>
+        <!-- </div> -->
+
+        <!-- <div class="box container-content-4">
+            <figure> -->
+                <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button> -->
+            <!-- <img class="p-4" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="600" height="400px">
+                <figcaption>Creativity</figcaption>
+                <figcaption class="content-tags">2022 #Team, #Product design</figcaption>
+                <figcaption class="content-more">view more</figcaption>
+            </figure>
+        </div>
+
+        <div class="box container-content-5">
+            <figure> -->
+                <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button> -->
+            <!-- <img class="p-5" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="600" height="400px">
+                <figcaption>Creativity</figcaption>
+                <figcaption class="content-tags">2022 #Team, #Product design</figcaption>
+                <figcaption class="content-more">view more</figcaption>
+            </figure>
+        </div>
+
+        <div class="box container-content-6">
+            <figure> -->
+                <!-- <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button> -->
+            <!-- <img class="p-6" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="600" height="400px">
+                <figcaption>Creativity</figcaption>
+                <figcaption class="content-tags">2022 #Team, #Product design</figcaption>
+                <figcaption class="content-more">view more</figcaption>
+            </figure>
+        </div> -->
+    </div>
+    <div class="box footer">
+        <footer>
+        <div class="footer-content">
+        <ul>
+            <li><a href="https://www.instagram.com/tricialgray/"><i class="fa-brands fa-instagram"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/tricialgray"<i class="fa-brands fa-linkedin-in"></i></a></li>
+            <li><a href="https://github.com/graylt"><i class="fa-brands fa-github"></i></a></li>
+        </ul>
+    </div>
+    </footer>
+</div>
+<!-- </div> -->
+
+</body>
+</html>
+
+<!-- alt header: -->
+
+      <!-- </nav> -->
+    <!-- </div> -->
+        <!-- <div class="'box header">
+            <header>
+                <h1 class="nav-h1"><a class="main-nav" href="index.html">Tricia Gray</a> is a designer & developer specializing in data-driven design, previously at <a href="https://smartdesignworldwide.com/" class="smart-link">Smart Design</a>.</h1>
+            </header>
+
+        </div> -->
+
+
+
+
+<!-- -----old code to be entered after body -->
+<!-- <header>
+    <div id="nav"></div>
+</header>
+   <div id="project-container">
+           <section>
+               <ul>
+               <li><h2 class="home-project">zigzag</h2></li>
+               <li><p class="home-description">An interpretation of a map platform that features civic engagement.</p></li>
+               <li><p class="read-more"><a href="p1.html">read more<i class="fa-thin fa-plus" style="font-size:16px" style="font-weight:400";></i></a></p></li>
+               <li><p class="home-tag">#2022 #personal</p></li>
+           </ul>
+       </section>
+       <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button>
+            <img class="p-1" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="285" height="500px">
+
+            <img class="p-1" src="https://images.unsplash.com/photo-1604076947037-d909e2f10fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="285" height="260">
+
+            <img class="p-1" src="https://images.unsplash.com/photo-1604076984203-587c92ab2e58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60 "width="285" height="260">
+            <button class="next" onclick="plusDivs(1, 0)">&#8594;</button>
+       </div>
+
+   <div id="project-container-2">
+           <section class="project-2">
+               <ul>
+               <li><h2 class="home-project">zigzag</h2></li>
+               <li><p class="home-description">An interpretation of a map platform that features civic engagement.</p></li>
+               <li><p class="read-more"><a href="p1.html">read more<i class="fa-thin fa-plus" style="font-size:16px" style="font-weight:400";></i></a></p></li>
+               <li><p class="home-tag">#2022  #personal</p></li>
+           </ul>
+       </section>
+       <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button>
+            <img class="p-2" src="https://images.unsplash.com/photo-1604077350837-c7f82f28653f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" width="285" height="500px">
+
+            <img class="p-2" src="https://images.unsplash.com/photo-1604076947037-d909e2f10fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="285" height="260">
+
+            <img class="p-2" src="https://images.unsplash.com/photo-1604076984203-587c92ab2e58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60 "width="285" height="260">
+            <button class="next" onclick="plusDivs(1, 0)">&#8594;</button>
+       </div>
+
+   <footer id="footer">
+<div class="footer"
+   <ul>
+        
+       <li><a href="https://www.instagram.com/tricialgray/"><i class="fa-brands fa-instagram"></i></a></li>
+       <li><a href="https://www.linkedin.com/in/tricialgray"<i class="fa-brands fa-linkedin-in"></i></a></li>
+       <li><a href="https://github.com/graylt"><i class="fa-brands fa-github"></i></a></li>
+   </ul>
+</div>
+</div>
+</footer>
+</body>
+</div> 
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- graveyard -->
+
 <!-- <header> -->
     <!-- <div id="nav"></div>  -->
     <!-- <div class="mini-menu">
@@ -44,66 +226,6 @@
         </section>
     </div> 
 </header> -->
-    <div class="grid">
-<body>
-        <header>
-     <div id="nav"></div>
-</header>
-    <div id="project-container">
-        <!-- <div id="project-1"> -->
-            <section>
-                <ul>
-                <li><h2 class="home-project">zigzag</h2></li>
-                <li><p class="home-description">An interpretation of a map platform that features civic engagement.</p></li>
-                <li><p class="read-more"><a href="p1.html">read more<i class="fa-thin fa-plus" style="font-size:16px" style="font-weight:400";></i></a></p></li>
-                <li><p class="home-tag">#2022 #personal</p></li>
-            </ul>
-        </section>
-        <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button>
-             <img class="p-1" src="https://images.unsplash.com/photo-1604079628040-94301bb21b91?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="285" height="500px">
-
-             <img class="p-1" src="https://images.unsplash.com/photo-1604076947037-d909e2f10fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="285" height="260">
-
-             <img class="p-1" src="https://images.unsplash.com/photo-1604076984203-587c92ab2e58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60 "width="285" height="260">
-             <button class="next" onclick="plusDivs(1, 0)">&#8594;</button>
-        </div>
-
-    <div id="project-container-2">
-        <!-- <div id="project-1"> -->
-            <section class="project-2">
-                <ul>
-                <li><h2 class="home-project">zigzag</h2></li>
-                <li><p class="home-description">An interpretation of a map platform that features civic engagement.</p></li>
-                <li><p class="read-more"><a href="p1.html">read more<i class="fa-thin fa-plus" style="font-size:16px" style="font-weight:400";></i></a></p></li>
-                <li><p class="home-tag">#2022  #personal</p></li>
-            </ul>
-        </section>
-        <button class="prev" onclick="plusDivs(-1, 0)">&#8592;</button>
-             <img class="p-2" src="https://images.unsplash.com/photo-1604077350837-c7f82f28653f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8NXx8fGVufDB8fHx8&auto=format&fit=crop&w=800&q=60" width="285" height="500px">
-
-             <img class="p-2" src="https://images.unsplash.com/photo-1604076947037-d909e2f10fca?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80" width="285" height="260">
-
-             <img class="p-2" src="https://images.unsplash.com/photo-1604076984203-587c92ab2e58?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwcm9maWxlLXBhZ2V8MTB8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=800&q=60 "width="285" height="260">
-             <button class="next" onclick="plusDivs(1, 0)">&#8594;</button>
-        </div>
-
-    <footer id="footer">
-<div class="footer"
-    <ul>
-         <!-- <li>© 2022 Tricia Gray. All rights reserved.</li>  -->
-        <li><a href="https://www.instagram.com/tricialgray/"><i class="fa-brands fa-instagram"></i></a></li>
-        <li><a href="https://www.linkedin.com/in/tricialgray"<i class="fa-brands fa-linkedin-in"></i></a></li>
-        <li><a href="https://github.com/graylt"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
-</div>
-</div>
-</footer>
-</body>
-</div>
-</html>
-
-
-<!-- graveyard -->
 
  <!-- <a class="prev" onclick='plusSlides(-1)'>&#10094;</a>
         <a class="next" onclick='plsuSlides(1)'>>&#10095;</a>
