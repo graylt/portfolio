@@ -229,6 +229,7 @@ p {
     object-fit: contain;
     height: 50vh;
     width: 100vh;
+    margin-bottom: 24px;
 }
 
 .p-2 {
@@ -236,6 +237,7 @@ p {
     object-fit: contain;
     height: 50vh;
     width: 100vh;
+    margin-bottom: 24px;
 }
 
 .p-3 {
@@ -243,6 +245,7 @@ p {
     object-fit: contain;
     height: 50vh;
     width: 100vh;
+    margin-bottom: 24px;
 }
 
 figcaption {
