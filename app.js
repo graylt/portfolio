@@ -33,7 +33,7 @@ function myResume() {
 // thumbnail hover
 
 $(function() {
-    $('.p1').hover(
+    $('.index-container').hover(
         function() {
             $(this).addClass('hovered');
         }, 

@@ -46,7 +46,7 @@ body > footer {
     grid-row: 1;
     grid-gap: 24px;
     grid-template-columns: 1fr 1fr 1fr;
-    background-color: blueviolet;
+    /* background-color: blueviolet; */
     margin-top: 1em;
     justify-items: end;
     margin-bottom: 2em;
@@ -76,6 +76,8 @@ body > footer {
     grid-area: header;
     grid-column: 1 / span 2;
     grid-row: 1;
+    position: sticky;
+    top: 0;
     /* margin-top: 24px; */
 }
 
@@ -221,14 +223,17 @@ p {
 
 .p-1 {
     display:none;
+    object-fit: contain;
 }
 
 .p-2 {
     display:none;
+    object-fit: contain;
 }
 
 .p-3 {
     display:flex;
+    object-fit: contain;
 }
 
 figcaption {
@@ -238,6 +243,10 @@ figcaption {
     justify-content: left;
     padding-left: 0;
 }
+
+/* .content-more { 
+
+} */
 
 /* slideshow buttons */
 
@@ -409,6 +418,7 @@ ul {
     border: .5px solid;
     color: rgb(111, 111, 111);
     justify-self: left;
+    width: 400px;
 } */
 
 /* -----Project pages----- */
@@ -416,6 +426,33 @@ ul {
 .project-nav {
     padding-top: 32px;
     margin-left: 16px;
+}
+
+.content-0 h2 {
+    color:rgb(111, 111, 111);
+}
+
+.content-projects {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-top: 3em;
+    row-gap: 8px;
+
+}
+
+.index-container {
+    font-size: 48px;
+    line-height: 42px;
+}
+
+/* .content-1 {
+    grid-row: 2;
+} */
+
+.index-container:hover {
+    cursor: pointer;
+    /* opacity: 0.5; */
+    text-decoration: underline;
 }
 
 .footer-content ul li {
@@ -438,18 +475,7 @@ a, .footer-content {
         'footer footer';
     }
 } */
-
-/* @media only screen and (min-width: 600px) {
-    .wrapper {
-        grid-gap: 24px;
-        grid-template-columns: 120px auto 120px;
-        grid-template-areas: 
-        'header header header', 
-        'nav 1 content nav2',
-        'footer footer footer';
-        /* max-width: 600px; */
-    /* }
-}  */
+ 
 
 @media only screen and (max-width: 600px) {
     body {
@@ -458,7 +484,7 @@ a, .footer-content {
     }
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     .wrapper {
         grid-template-areas:
         'header header header header header header',
@@ -467,7 +493,7 @@ a, .footer-content {
       
 }
 
-}
+} */
 
 
 
