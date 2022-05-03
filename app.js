@@ -59,7 +59,7 @@ function carousel() {
   myIndex++;
   if (myIndex > x.length) {myIndex = 1}    
   x[myIndex-1].style.display = 'block';  
-  setTimeout(carousel, 2000); // Change image every 2 seconds
+  setTimeout(carousel, 3000); // Change image every 2 seconds
 }
 
 let mySecondIndex = 0;
@@ -74,7 +74,7 @@ function carousel2() {
     mySecondIndex++;
     if (mySecondIndex > y.length) {mySecondIndex = 1}
     y[mySecondIndex-1].style.display = 'block';
-    setTimeout(carousel2, 2000);
+    setTimeout(carousel2, 3000);
     }
 });
 
