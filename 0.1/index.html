@@ -11,28 +11,6 @@
             $("#nav").load("nav.html");
         });
       </script>
-            <!-- <script>
-        //   On scroll
-        $(window)
-        .scroll(function() {
-            //if we have more than 200px - reduced to 0, needs adjusting to properly work
-            if ($(document)
-            .scrollTop() > 10) {
-                //class 'fixed' to header element
-                $('nav')
-                .addClass('fixed');
-                //otherwise
-            } else {
-                //if header already has 'fixed' class
-                if ($('nav')
-                .hasClass('fixed')) {
-                    //remove said class
-                    $('nav')
-                    .removeClass('fixed');
-                }
-            }
-        });
-      </script> -->
     <title>Tricia Gray</title>
 </head>
 <body>
@@ -43,16 +21,37 @@
         <div class="content-container">
             <h3 class="content-container-header">Selected work</h3>
             <ul>
-                <li class="project-title">25ft From the Rim</li>
-                <li class="project-title"> Assemble Books</li>
-                <li class="project-title">Cautious Ape</li>
-                <li class="project-title">Architecture Index</li>
-                <li class="project-title">Creativity</li>
-                <li class="project-title">Buy Local</li>
-                <li class="project-title">Zigzag</li>
-                <li class="project-title">Cue</li>
-                <li class="project-title">Dispatch</li>
-                <li class="project-title">Natoora</li>
+                <a class="project-title-hover" id="text">
+                    <li class="project-title" id="link">25ft From the Rim <span class="tag">(personal)</span></li>
+                    <img id="pic" src="https://a.espncdn.com/photo/2017/0519/r210880_4680x3212cc.jpg"/>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title"> Assemble Books <span class="tag">(team)</span></li>
+                </a>
+                <a class="project-title-hover"> 
+                    <li class="project-title">Cautious Ape <span class="tag">(team)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Architecture Index <span class="tag">(personal)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Creativity <span class="tag">(team)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Buy Local <span class="tag">(team)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Zigzag <span class="tag">(personal)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Cue <span class="tag">(personal)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Dispatch <span class="tag">(personal)</span></li>
+                </a>
+                <a class="project-title-hover">
+                    <li class="project-title">Natoora <span class="tag">(personal)</span></li>
+                </a>
             </ul>
         </div>
 

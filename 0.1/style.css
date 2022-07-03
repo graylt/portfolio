@@ -7,7 +7,7 @@ font-family: 'Source Serif Pro', serif; */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
-    /* cursor: crosshair; */
+    cursor: pointer;
   }
 
   body {
@@ -79,21 +79,57 @@ font-family: 'Source Serif Pro', serif; */
     color: gray;
   }
 
+  .tag {
+    font-size: 24px;
+  }
+
   a {
     text-decoration: none;
     color: black;
   }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+a:hover{
+    color:000;
+}
+
+a.main-nav:hover {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 200;
+}
+
+a.project-title-hover:hover {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 200;
+    font-size: 32px;
+}
+/* a.main-nav-1:hover {
+    font-family: 'Source Serif Pro', serif;
+    font-weight: 200;
+} */
+
+a.nav:hover {
+    color: #000;
+}
+
+.smart-link {
+    color: rgb(51, 51, 240);
+}
 
 
 /* Projects */
 .content-container {
     grid-area: content;
     display: grid;
-    grid-column: 1 / span 3;
+    grid-column: 1 / span 6;
     grid-row: 6;
     font-family: 'Libre Franklin', sans-serif;
-    font-size: 64px;
-    font-weight: 700;
+    font-size: 72px;
+    font-weight: 500;
     overflow: auto;
 }
 
@@ -108,3 +144,23 @@ font-family: 'Source Serif Pro', serif; */
 ul {
     list-style: none;
 }
+
+#pic {
+    /* position: absolute; */
+    top: 0;
+    /* margin-left: 4em; */
+    /* left: 0; */
+    display: none;
+    /* background: red; */
+    height: 280px;
+    width: 368px;
+    z-index: -1;
+  }
+  
+  #text, #link {
+    position: relative;
+  }
+  
+  #link:hover + #pic {
+    display: block;
+  }
