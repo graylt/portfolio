@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        $(function() { 
+            $("#nav").load("nav.html");
+        });
+      </script>
+            <!-- <script>
+        //   On scroll
+        $(window)
+        .scroll(function() {
+            //if we have more than 200px - reduced to 0, needs adjusting to properly work
+            if ($(document)
+            .scrollTop() > 10) {
+                //class 'fixed' to header element
+                $('nav')
+                .addClass('fixed');
+                //otherwise
+            } else {
+                //if header already has 'fixed' class
+                if ($('nav')
+                .hasClass('fixed')) {
+                    //remove said class
+                    $('nav')
+                    .removeClass('fixed');
+                }
+            }
+        });
+      </script> -->
+    <title>Tricia Gray</title>
+</head>
+<body>
+    <header class="header">
+        <div id="nav"></div>
+    </header>
+    <div class="wrapper">
+        <div class="content-container">
+            <h3 class="content-container-header">Selected work</h3>
+            <ul>
+                <li class="project-title">25ft From the Rim</li>
+                <li class="project-title"> Assemble Books</li>
+                <li class="project-title">Cautious Ape</li>
+                <li class="project-title">Architecture Index</li>
+                <li class="project-title">Creativity</li>
+                <li class="project-title">Buy Local</li>
+                <li class="project-title">Zigzag</li>
+                <li class="project-title">Cue</li>
+                <li class="project-title">Dispatch</li>
+                <li class="project-title">Natoora</li>
+            </ul>
+        </div>
+
+    </div>
+</body>
+</html>

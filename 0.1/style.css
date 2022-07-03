@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;500;700&family=Source+Serif+Pro:wght@300;400;700&display=swap');
+
+/* font-family: 'Libre Franklin', sans-serif;
+font-family: 'Source Serif Pro', serif; */
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    /* cursor: crosshair; */
+  }
+
+  body {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+    height: 100vh;
+    margin: 0;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-areas: "header header header header header header"
+                         "content content content content content content"
+                         "footer footer footer footer footer footer";
+    margin: 48px;
+    gap: 24px;
+    overflow: hidden;
+  }
+
+/* Header / navigation */
+  .header, #nav, header {
+    grid-area: header header header header header header; 
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left:0;
+    right:0;
+    top:0;
+    padding-top: 24px;
+    padding-left: 48px;
+    height: 124px;
+    background-color: white;
+  }
+
+  .header-content-left {
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .header-content-right {
+    display: inline;
+    float: right;
+    align-self: flex-start;
+    margin-left: auto;
+    margin-right: 48px;
+  }
+
+  .header-content-info {
+    display: inline;
+    float: right;
+    margin-right: 48px;
+  
+  } 
+
+  .header-content-contact {
+    display: inline;
+    float: right;
+  }
+
+  h1, h2{
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 400;
+  }
+
+  h3 {
+    font-size: 24px;
+    font-weight: 300;
+    color: gray;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+
+/* Projects */
+.content-container {
+    grid-area: content;
+    display: grid;
+    grid-column: 1 / span 3;
+    grid-row: 6;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    overflow: auto;
+}
+
+.content-container-header {
+    margin-bottom: 16px;
+}
+
+.project-title {
+    margin-bottom: 16px;
+}
+
+ul {
+    list-style: none;
+}
